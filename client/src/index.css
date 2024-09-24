@@ -55,8 +55,10 @@ p {
     margin-bottom: var(--margin-base);
 }
 .CreateEmployeeForm {
-    max-width: 600px; /* Set a max width for the form */
+    border-radius: 0.5rem;
+    background-color: whitesmoke;
     margin: auto; /* Center the form */
+    padding: 2rem;
 }
 
 table {
@@ -65,16 +67,31 @@ table {
     border-spacing: 0 10px; /* Space between rows */
 }
 
-td {
-    padding: 10px; /* Padding inside cells */
-    background-color: #f9f9f9; /* Light background for visibility */
-    border: 1px solid #ddd; /* Border for each cell */
+tr td {
+    padding: 0;
+    background-color: #dfdddd;
+    border: 1px solid #e3dddd;
     font-size: 1rem;
-}
-input{
+    border-radius: 0.25rem;
+    margin-bottom: 15px;
+    width: 100%;
     font-size: 0.8rem;
-    padding: 4px;
+    text-align: start;
+    align-content: center;
+    height: 2rem;
+    padding-left: 1rem;
 }
+td input, option, select {
+    width: 30%;
+    height: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+  }
 button {
     display: block; /* Display the button as a block element */
     margin: 20px auto 0; /* Center the button horizontally */

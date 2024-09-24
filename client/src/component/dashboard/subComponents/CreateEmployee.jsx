@@ -43,6 +43,7 @@ export default function CreateEmployee() {
            for (let [key, value] of newData.entries()) {
             console.log(`${key}: ${value}`);
            }
+           resetForm();
             // sending request
         }
         else{
@@ -51,6 +52,10 @@ export default function CreateEmployee() {
     } catch (error) {
         console.log(error);
     }
+  }
+  const resetForm = ()=>{
+    setFormData(initialFormData);
+    setImage(null);
   }
   return (
 <div className="CreateEmployeeForm" style={{ marginLeft: "8rem" }}>
